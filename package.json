@@ -1,0 +1,36 @@
+{
+  "name": "minimal-typescript",
+  "main": "./lib/minimal-typescript",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "minimal-typescript:open"
+  },
+  "repository": "https://github.com/atom/minimal-typescript",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "atomTranspilers": [
+    {
+      "transpiler": "atom-ts-transpiler",
+      "glob": "{!(node_modules)/**/,}*.ts?(x)"
+    }
+  ],
+  "scripts": {
+    "debug:transpile": "atom-transpiler-debug-tool"
+  },
+  "dependencies": {
+    "@types/atom": "^1.24.4",
+    "@types/react": "^16.0.40",
+    "@types/react-dom": "^16.0.4",
+    "atom-ts-transpiler": "^1.4.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "atom-transpiler-debug-tool": "^1.0.4"
+  }
+}

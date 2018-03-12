@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle minimal-typescript",
+        "command": "minimal-typescript:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "minimal-typescript",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "minimal-typescript:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
